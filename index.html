@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WORLDS: World Models and Spatial Intelligence for Physical AI — IROS 2026 Workshop</title>
+  <meta name="description" content="WORLDS: World Models and Spatial Intelligence for Physical AI — IROS 2026 Workshop. Exploring spatial understanding, world models, and embodied robot learning." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand"><img src="assets/IROS-2026-logo-768x499-1.png.webp" alt="IROS 2026" class="nav-logo" /> IROS 2026 Workshop</span>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#dates">Dates</a></li>
+      <li><a href="#cfp">Call for Papers</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#papers">Papers</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="home">
+  <img src="assets/IROS-2026-logo-768x499-1.png.webp" alt="IROS 2026" class="hero-logo" />
+  <p class="subtitle">IROS 2026 Workshop</p>
+  <h1>WORLDS: World Models and Spatial Intelligence for Physical AI</h1>
+  <p class="meta">
+    <span>📅 October 2026</span>
+    <span>📍 IROS 2026 Venue, TBD</span>
+  </p>
+  <p class="meta">
+    <span>⏰ Half Day (8:30 AM – 12:30 PM)</span>
+  </p>
+  <a href="#cfp" class="btn-primary">Submit a Paper &rarr;</a>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <h2 class="section-title">About the Workshop</h2>
+  <div class="about-text">
+    <p>
+      Despite rapid progress in robot learning and multimodal foundation models, enabling robots to build robust spatial understanding of their environments remains a fundamental challenge for long-horizon decision-making and reliable interaction in complex real-world settings. Tasks such as manipulation in cluttered environments, multi-step task execution, and navigation in dynamic spaces require robots to understand the spatial structure of scenes, reason about object relationships, and anticipate how the environment may change in response to their actions.
+    </p>
+    <p>
+      Recent research has begun to address these challenges through advances in spatial perception, world models, multimodal representations, and vision–language–action learning. However, these efforts are often fragmented across different communities within robotics, machine learning, and embodied AI. As a result, there is a growing need to bring together researchers working on spatial understanding, predictive modeling, and embodied robot learning.
+    </p>
+    <p>
+      This workshop aims to provide a forum for discussing emerging approaches to spatial representations and world models for embodied robots. By bringing together experts in robot manipulation, navigation, multimodal learning, and large-scale robot learning systems, the workshop will explore how improved spatial understanding can enable more robust, generalizable, and scalable robotic systems operating in complex real-world environments.
+    </p>
+    <p><strong>Key topics include:</strong></p>
+    <ul style="margin-top:0.5rem; margin-left:1.5rem;">
+      <li>World models for robotic manipulation and navigation</li>
+      <li>Spatial intelligence and 3D scene understanding for embodied AI</li>
+      <li>Multimodal representations for robot learning</li>
+      <li>Vision–language–action models for physical AI</li>
+      <li>Predictive modeling and anticipation in dynamic environments</li>
+      <li>Long-horizon task planning with spatial reasoning</li>
+      <li>Foundation models for embodied robot learning</li>
+      <li>Sim-to-real transfer and scalable robot learning systems</li>
+      <li>Benchmarks and evaluation for spatial understanding in robotics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== IMPORTANT DATES ===================== -->
+<section class="section" id="dates" style="background:#f7f9fb;">
+  <div class="section-inner">
+    <h2 class="section-title">Important Dates</h2>
+    <div class="dates-grid">
+      <div class="date-card">
+        <div class="date">July 15, 2026</div>
+        <div class="label">Paper Submission Deadline</div>
+      </div>
+      <div class="date-card">
+        <div class="date">August 15, 2026</div>
+        <div class="label">Notification of Acceptance</div>
+      </div>
+      <div class="date-card">
+        <div class="date">September 1, 2026</div>
+        <div class="label">Camera-Ready Deadline</div>
+      </div>
+      <div class="date-card">
+        <div class="date">October 2026</div>
+        <div class="label">Workshop Day @ IROS 2026</div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:1rem; font-size:0.9rem; color:#888;">
+      All deadlines are 23:59 AoE (Anywhere on Earth).
+    </p>
+  </div>
+</section>
+
+<!-- ===================== CALL FOR PAPERS ===================== -->
+<section class="section" id="cfp">
+  <h2 class="section-title">Call for Papers</h2>
+  <div class="cfp-content">
+    <p>
+      We invite submissions of short papers (4 pages + references) on topics related to world models and spatial intelligence for physical AI. We welcome both novel research contributions and position/survey papers.
+    </p>
+    <p><strong>Topics of interest include, but are not limited to:</strong></p>
+    <ul>
+      <li>World models for robotic manipulation and navigation</li>
+      <li>Spatial intelligence and 3D scene understanding</li>
+      <li>Multimodal and vision–language–action representations</li>
+      <li>Predictive modeling for dynamic environments</li>
+      <li>Long-horizon planning with spatial reasoning</li>
+      <li>Foundation models for embodied agents</li>
+      <li>Sim-to-real transfer and scalable robot learning</li>
+      <li>Benchmarks and datasets for spatial understanding</li>
+      <li>Real-world deployment of physical AI systems</li>
+    </ul>
+    <p>
+      Submissions should follow the <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">IEEE conference format</a> and be submitted via
+      <a href="#" target="_blank">OpenReview (link TBD)</a>.
+    </p>
+    <p>
+      Accepted papers will be presented as posters with spotlight talks. At least one author of each accepted paper must attend the workshop.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== SCHEDULE ===================== -->
+<section class="section" id="schedule" style="background:#f7f9fb;">
+  <div class="section-inner">
+    <h2 class="section-title">Schedule</h2>
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th style="width:140px;">Time</th>
+          <th>Event</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:30 – 8:40</td>
+          <td>Opening Remarks</td>
+          <td>Welcome &amp; Workshop Overview</td>
+        </tr>
+        <tr>
+          <td>8:40 – 9:10</td>
+          <td>Invited Talk 1</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>9:10 – 9:40</td>
+          <td>Invited Talk 2</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>9:40 – 10:00</td>
+          <td>Spotlight Talks</td>
+          <td>2-min lightning talks by accepted paper authors</td>
+        </tr>
+        <tr class="break-row">
+          <td>10:00 – 10:20</td>
+          <td>☕ Coffee Break &amp; Poster Session</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:20 – 10:50</td>
+          <td>Invited Talk 3</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>10:50 – 11:20</td>
+          <td>Invited Talk 4</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>11:20 – 12:00</td>
+          <td>Panel Discussion</td>
+          <td>World Models Meets Foundation Models for Physical AI</td>
+        </tr>
+        <tr>
+          <td>12:00 – 12:15</td>
+          <td>Awards &amp; Closing Remarks</td>
+          <td>Best Paper &amp; Best Poster Awards</td>
+        </tr>
+        <tr class="break-row">
+          <td>12:15 – 12:30</td>
+          <td>🤝 Networking</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="text-align:center; margin-top:1rem; font-size:0.88rem; color:#888;">
+      * The schedule is tentative and subject to change. All times are local to the conference venue.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== INVITED SPEAKERS ===================== -->
+<section class="section" id="speakers">
+  <h2 class="section-title">Invited Speakers</h2>
+  <p style="text-align:center; color:#666; margin-bottom:1rem;">
+    We are excited to announce our lineup of invited speakers (more to be confirmed):
+  </p>
+  <div class="people-grid">
+
+    <div class="person-card">
+      <img class="avatar" src="assets/speakers/placeholder.svg" alt="Speaker 1" />
+      <div class="name">Speaker 1</div>
+      <div class="affiliation">University / Lab TBD</div>
+      <div class="talk-title">Talk title TBD</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/speakers/placeholder.svg" alt="Speaker 2" />
+      <div class="name">Speaker 2</div>
+      <div class="affiliation">University / Lab TBD</div>
+      <div class="talk-title">Talk title TBD</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/speakers/placeholder.svg" alt="Speaker 3" />
+      <div class="name">Speaker 3</div>
+      <div class="affiliation">University / Lab TBD</div>
+      <div class="talk-title">Talk title TBD</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/speakers/placeholder.svg" alt="Speaker 4" />
+      <div class="name">Speaker 4</div>
+      <div class="affiliation">University / Lab TBD</div>
+      <div class="talk-title">Talk title TBD</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== ACCEPTED PAPERS ===================== -->
+<section class="section" id="papers" style="background:#f7f9fb;">
+  <div class="section-inner">
+    <h2 class="section-title">Accepted Papers</h2>
+    <p style="text-align:center; color:#666; margin-bottom:1.5rem;">
+      Accepted papers will be listed here after the review process. Authors of accepted papers are expected to present a poster and deliver a short spotlight talk.
+    </p>
+    <div class="paper-list">
+      <!-- Example paper entry (uncomment and duplicate as needed)
+      <div class="paper-item">
+        <div class="paper-title">Title of the Accepted Paper</div>
+        <div class="paper-authors">Author A, Author B, Author C</div>
+        <div class="paper-links">
+          <a href="#">📄 PDF</a>
+          <a href="#">🔗 Project Page</a>
+        </div>
+      </div>
+      -->
+      <p style="text-align:center; color:#aaa; font-style:italic;">
+        Paper submissions open — check back after notifications!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ORGANIZERS ===================== -->
+<section class="section" id="organizers">
+  <h2 class="section-title">Organizers</h2>
+  <div class="people-grid">
+
+    <div class="person-card">
+      <img class="avatar" src="assets/organizers/placeholder.svg" alt="Koichiro Niinuma" />
+      <div class="name"><a href="#">Koichiro Niinuma</a></div>
+      <div class="affiliation">Fujitsu Research of America</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/organizers/placeholder.svg" alt="Laszlo Jeni" />
+      <div class="name"><a href="#">Laszlo Jeni</a></div>
+      <div class="affiliation">Carnegie Mellon University</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/organizers/placeholder.svg" alt="Shaunak Mehta" />
+      <div class="name"><a href="#">Shaunak Mehta</a></div>
+      <div class="affiliation">Fujitsu Research of America</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/organizers/placeholder.svg" alt="Ananya Hazarika" />
+      <div class="name"><a href="#">Ananya Hazarika</a></div>
+      <div class="affiliation">Fujitsu Research of America</div>
+    </div>
+
+    <div class="person-card">
+      <img class="avatar" src="assets/organizers/placeholder.svg" alt="Prajit Krisshna Kumar" />
+      <div class="name"><a href="#">Prajit Krisshna Kumar</a></div>
+      <div class="affiliation">Fujitsu Research of America</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== SPONSORS ===================== -->
+<section class="section" id="sponsors" style="background:#f7f9fb;">
+  <div class="section-inner">
+    <h2 class="section-title">Sponsors</h2>
+    <div class="sponsors-row">
+      <!-- Add sponsor logos here -->
+      <p style="color:#aaa; font-style:italic;">Sponsor information coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p>
+    &copy; 2026 WORLDS: World Models and Spatial Intelligence for Physical AI — IROS 2026 Workshop
+  </p>
+  <p style="margin-top:0.5rem;">
+    Contact: <a href="mailto:workshop-iros2026@example.com">workshop-iros2026@example.com</a>
+  </p>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="script.js"></script>
+</body>
+</html>
