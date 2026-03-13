@@ -8,6 +8,8 @@ Workshop website for **"WORLDS: World Models and Spatial Intelligence for Physic
 
 - **Koichiro Niinuma** — Fujitsu Research of America
 - **Laszlo Jeni** — Carnegie Mellon University
+- **Mihoko Niitsuma** — Chuo University
+- **Makoto Kawano** — University of Tokyo
 - **Shaunak Mehta** — Fujitsu Research of America
 - **Ananya Hazarika** — Fujitsu Research of America
 - **Prajit Krisshna Kumar** — Fujitsu Research of America
