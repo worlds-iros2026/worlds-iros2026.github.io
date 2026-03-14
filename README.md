@@ -10,6 +10,8 @@ Workshop website for **"WORLDS: World Models and Spatial Intelligence for Physic
 - **Laszlo Jeni** — Carnegie Mellon University
 - **Mihoko Niitsuma** — Chuo University
 - **Makoto Kawano** — University of Tokyo
+- **Ananya Bal** — Carnegie Mellon University
+- **Jeffrey Ichnowski** — Carnegie Mellon University
 - **Shaunak Mehta** — Fujitsu Research of America
 - **Ananya Hazarika** — Fujitsu Research of America
 - **Prajit Krisshna Kumar** — Fujitsu Research of America
