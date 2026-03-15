@@ -335,98 +335,71 @@ img {
   margin-top: 0.3rem;
 }
 
-/* ===== Speaker Bio Toggle & Panel ===== */
-.bio-toggle {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.25rem 0.8rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #1a6fb5;
-  background: transparent;
-  border: 1px solid #1a6fb5;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+/* ===== Speaker Bios (collapsible details) ===== */
+.speaker-bios {
+  max-width: 800px;
+  margin: 2rem auto 0;
 }
 
-.bio-toggle:hover,
-.bio-toggle.active {
-  background: #1a6fb5;
-  color: #fff;
-}
-
-/* Full-width bio panel below the grid */
-.bio-panel {
-  display: none;
-  margin-top: 1.5rem;
-  padding: 1.5rem 2rem;
+.bio-details {
   background: #f5f8fb;
   border: 1px solid #e0e7ee;
-  border-radius: 10px;
-  animation: bioSlideDown 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
 }
 
-.bio-panel.open {
-  display: block;
-}
-
-@keyframes bioSlideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.bio-panel-inner {
+.bio-details summary {
   display: flex;
-  gap: 1.8rem;
-  align-items: flex-start;
-  max-width: 900px;
-  margin: 0 auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0b3d6b;
+  list-style: none;
+  transition: background 0.2s;
 }
 
-.bio-panel .bio-photo {
-  width: 120px;
-  height: 120px;
+.bio-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.bio-details summary::after {
+  content: '▸';
+  margin-left: auto;
+  font-size: 0.85rem;
+  transition: transform 0.2s;
+}
+
+.bio-details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.bio-details summary:hover {
+  background: #eaf2fa;
+}
+
+.bio-details .bio-thumb {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #e0e7ee;
+  border: 2px solid #e0e7ee;
   flex-shrink: 0;
 }
 
-.bio-panel .bio-text {
-  flex: 1;
-}
-
-.bio-panel .bio-text h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0b3d6b;
-  margin-bottom: 0.6rem;
-}
-
-.bio-panel .bio-text p {
+.bio-details p {
+  padding: 0 1.2rem 0.8rem;
   font-size: 0.9rem;
   line-height: 1.65;
   color: #444;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
-@media (max-width: 600px) {
-  .bio-panel-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .bio-panel .bio-photo {
-    width: 100px;
-    height: 100px;
-  }
+.bio-details p + p {
+  padding-top: 0.4rem;
 }
 
 /* ===== Papers ===== */
