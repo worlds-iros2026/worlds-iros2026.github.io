@@ -41,12 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (section.id) observer.observe(section);
   });
 
-  // ===== Bio toggle button text =====
+  // ===== Bio panel toggle =====
   document.querySelectorAll('.bio-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
-      const card = btn.parentElement;
-      const isOpen = card.classList.contains('bio-open');
-      btn.innerHTML = isOpen ? 'Show Bio &#9662;' : 'Hide Bio &#9652;';
+      const targetId = btn.getAttribute('data-target');
+      const panel = document.getElementById(targetId);
+      if (!panel) return;
+
+      const isOpen = panel.classList.contains('open');
+
+      // Close all panels and deactivate all buttons
+      document.querySelectorAll('.bio-panel').forEach(p => p.classList.remove('open'));
+      document.querySelectorAll('.bio-toggle').forEach(b => {
+        b.classList.remove('active');
+        b.innerHTML = 'Show Bio &#9662;';
+      });
+
+      // If it wasn't open, open this one
+      if (!isOpen) {
+        panel.classList.add('open');
+        btn.classList.add('active');
+        btn.innerHTML = 'Hide Bio &#9652;';
+        // Smooth scroll to panel
+        setTimeout(() => {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 50);
+      }
     });
   });
 

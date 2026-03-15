@@ -335,7 +335,7 @@ img {
   margin-top: 0.3rem;
 }
 
-/* ===== Speaker Bio Toggle ===== */
+/* ===== Speaker Bio Toggle & Panel ===== */
 .bio-toggle {
   display: inline-block;
   margin-top: 0.5rem;
@@ -350,35 +350,83 @@ img {
   transition: background 0.2s, color 0.2s;
 }
 
-.bio-toggle:hover {
+.bio-toggle:hover,
+.bio-toggle.active {
   background: #1a6fb5;
   color: #fff;
 }
 
-.person-card .bio {
+/* Full-width bio panel below the grid */
+.bio-panel {
   display: none;
-  margin-top: 0.6rem;
-  padding: 0.8rem;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  color: #444;
-  text-align: left;
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
   background: #f5f8fb;
-  border-radius: 6px;
   border: 1px solid #e0e7ee;
+  border-radius: 10px;
+  animation: bioSlideDown 0.3s ease;
 }
 
-.person-card.bio-open .bio {
+.bio-panel.open {
   display: block;
 }
 
-.person-card.bio-open .bio-toggle::after {
-  content: '';
+@keyframes bioSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.person-card.bio-open .bio-toggle {
-  background: #1a6fb5;
-  color: #fff;
+.bio-panel-inner {
+  display: flex;
+  gap: 1.8rem;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio-panel .bio-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e7ee;
+  flex-shrink: 0;
+}
+
+.bio-panel .bio-text {
+  flex: 1;
+}
+
+.bio-panel .bio-text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0b3d6b;
+  margin-bottom: 0.6rem;
+}
+
+.bio-panel .bio-text p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .bio-panel-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bio-panel .bio-photo {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* ===== Papers ===== */
