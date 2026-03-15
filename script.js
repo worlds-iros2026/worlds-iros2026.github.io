@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (section.id) observer.observe(section);
   });
 
+  // ===== Bio toggle button text =====
+  document.querySelectorAll('.bio-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.parentElement;
+      const isOpen = card.classList.contains('bio-open');
+      btn.innerHTML = isOpen ? 'Show Bio &#9662;' : 'Hide Bio &#9652;';
+    });
+  });
+
   // ===== Smooth reveal animation =====
   const revealElements = document.querySelectorAll(
     '.date-card, .person-card, .paper-item, .schedule-table tbody tr'
